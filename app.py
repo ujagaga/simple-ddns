@@ -134,6 +134,6 @@ def sub_index(sub):
 application.secret_key = urandom(12)
 
 if __name__ == '__main__':
-    app.secret_key = urandom(12)
-    application.run()
-    # app.run(debug=True, host='0.0.0.0', port=4000)
+    application.secret_key = urandom(12)
+    application.run()					# for hosting deployment
+    # app.run(debug=True, host='0.0.0.0', port=4000)  	# for localhost and debugging

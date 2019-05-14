@@ -12,3 +12,6 @@ https://mysubdomain.thisddnsservice.com/?secret=qwerty123
 to remove a sub-domain, make a get request to:
 https://mysubdomain.thisddnsservice.com/?secret=qwerty123&op=remove
 
+# Hosting debugging
+Once I deployed the app on my webhosting (Hawkhost) it did not work because the .htaccess file had set base URI to "/.". I had to change it to "/".
+Passing the subdomains to the app was only a matter of setting subdomains in the cpanel to match all "*.thisddnsservice.com" and pass them to "thisddnsservice.com".
